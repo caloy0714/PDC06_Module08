@@ -24,11 +24,14 @@ namespace PDC06_Module08
         private HttpClient _Client = new HttpClient();
         private ObservableCollection<Post> _post;
 
-
-      
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void OpenPageSearch(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchPage());
         }
 
         private async void OnAdd(object sender, System.EventArgs e)

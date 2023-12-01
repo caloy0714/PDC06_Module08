@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace PDC06_Module08
 {
     public partial class App : Application
@@ -10,7 +11,7 @@ namespace PDC06_Module08
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
@@ -25,4 +26,5 @@ namespace PDC06_Module08
         {
         }
     }
+
 }
